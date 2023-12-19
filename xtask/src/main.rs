@@ -76,7 +76,7 @@ fn main() -> xshell::Result<()> {
         cmd!(sh, "cargo miri setup").run()?;
         cmd!(sh, "cargo miri test --features unstable").run()?;
     }
-
+/*
     {
         let _s = section("PUBLISH");
 
@@ -98,6 +98,7 @@ fn main() -> xshell::Result<()> {
             cmd!(sh, "git push --tags").run()?;
         }
     }
+    */
     Ok(())
 }
 
